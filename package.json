@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "input": "^1.0.1",
+    "redis": "^4.6.4",
+    "telegram": "^2.15.5"
+  },
+  "type": "module"
+}
