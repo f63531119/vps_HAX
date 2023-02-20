@@ -79,7 +79,7 @@ const stringSession = new StringSession(session_auth_key);
           // 前后两次code不一致，向redis里写一个String--key为 hax_bot_code[_命令行第一个参数]，过期时间设置为30分钟=1800秒
           const client = createClient({
             //url: "redis://eeeoa.com:8899", //这里可以改为自己的redis地址
-            url: "redis://default:RFqDKRXheRrqDPz0if1oyeVkRTbllRTl@redis-18806.c250.eu-central-1-1.ec2.cloud.redislabs.com:18806",
+            url: "redis://username:password@redisserver.example.com:6379",
           });
           client.on("error", (err) =>
             console.log("Redis客户端初始化失败:", err)
